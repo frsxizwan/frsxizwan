@@ -1,5 +1,16 @@
 # Hi there 👋, I'm Mohamad Faris Izwan
 
+[![GitHub Followers](https://www.shieldcn.dev/github/followers/frsxizwan.svg?variant=secondary&size=sm)](https://github.com/frsxizwan?tab=followers) [![GitHub Stars](https://www.shieldcn.dev/github/user-stars/frsxizwan.svg?variant=secondary&size=sm)](https://github.com/frsxizwan?tab=repositories) [![Public Repos](https://www.shieldcn.dev/badge/Repos-3-2563eb.svg?logo=github&variant=secondary&size=sm)](https://github.com/frsxizwan?tab=repositories)
+
+</div>
+
+## 🛠️ Skills & Technologies
+
+![TypeScript](https://www.shieldcn.dev/badge/-TypeScript-3178C6.svg?logo=typescript&variant=branded&size=sm) ![React](https://www.shieldcn.dev/badge/-React-61DAFB.svg?logo=react&variant=branded&size=sm) ![Vite](https://www.shieldcn.dev/badge/-Vite-646CFF.svg?logo=vite&variant=branded&size=sm) ![esbuild](https://www.shieldcn.dev/badge/-esbuild-FFCF00.svg?logo=esbuild&variant=branded&size=sm) ![Tailwind CSS](https://www.shieldcn.dev/badge/-Tailwind_CSS-06B6D4.svg?logo=tailwindcss&variant=branded&size=sm)
+
+---
+
+
 ## 🚀 About Me
 
 🎓 Bachelor of Cybersecurity Graduate (CGPA 3.62)
@@ -19,7 +30,9 @@
 - Cloud Technologies
 
 ---
-
+![Python](https://shieldcn.dev/badge/Python-3776AB.svg?logo=python&logoColor=fff&variant=branded) ![Made with Love](https://shieldcn.dev/badge/made%20with-%E2%9D%A4-red.svg) ![Java](https://shieldcn.dev/badge/Java-ED8B00.svg?logo=ri%3AFaJava&logoColor=fff&variant=branded) ![Runs on Linux](https://shieldcn.dev/badge/Runs%20on-Linux-FCC624.svg?logo=linux&logoColor=000) ![Maven](https://shieldcn.dev/badge/Maven-C71A36.svg?logo=apachemaven&logoColor=fff&variant=branded) ![Bulls Fan](https://shieldcn.dev/nba/bulls.svg?variant=outline)
+![TypeScript](https://shieldcn.dev/badge/TypeScript-3178C6.svg?logo=typescript&logoColor=fff&variant=branded) 
+---
 ## 🛠️ Technical Skills
 
 ### Cybersecurity
