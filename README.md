@@ -146,7 +146,7 @@ Working on:
 ## 🌐 Connect With Me
 
 💼 LinkedIn:
-www.linkedin.com/in/faris-izwan-4a4658180
+www.linkedin.com/in/faris-izwan
 
 📧 Email:
 frsxizwan.mfi@gmail.com
