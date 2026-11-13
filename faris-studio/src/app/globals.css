@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #070b14;
+  --color-ink-2: #0b111d;
+  --color-surface: #0f1624;
+  --color-surface-2: #151d2e;
+  --color-line: rgb(255 255 255 / 0.08);
+  --color-line-strong: rgb(255 255 255 / 0.16);
+  --color-fg: #e9edf5;
+  --color-muted: #9aa5ba;
+  --color-faint: #8d98ad;
+  --color-accent: #6ea8ff;
+  --color-accent-deep: #2f6fe0;
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  background: var(--color-ink);
+  color-scheme: dark;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+html[data-motion="reduced"] {
+  scroll-behavior: auto;
+}
+
+html[data-motion="reduced"] *,
+html[data-motion="reduced"] *::before,
+html[data-motion="reduced"] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgb(110 168 255 / 0.3);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@layer components {
+  .container-page {
+    width: 100%;
+    max-width: 76rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .container-page {
+      padding-inline: 2.5rem;
+    }
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-faint);
+  }
+
+  .hairline {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-line-strong), transparent);
+  }
+
+  /* Interactive card: a soft light follows the pointer via --mx / --my. */
+  .card-spot {
+    position: relative;
+    isolation: isolate;
+  }
+  .card-spot::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+      420px circle at var(--mx, 50%) var(--my, 0%),
+      rgb(110 168 255 / 0.1),
+      transparent 60%
+    );
+    opacity: 0;
+    transition: opacity 400ms var(--ease-out-expo);
+    pointer-events: none;
+    z-index: -1;
+  }
+  .card-spot:hover::before,
+  .card-spot:focus-within::before {
+    opacity: 1;
+  }
+}
+
+.hero-fallback {
+  background:
+    radial-gradient(60% 50% at 72% 42%, rgb(47 111 224 / 0.22), transparent 70%),
+    radial-gradient(40% 40% at 20% 80%, rgb(47 111 224 / 0.08), transparent 70%);
+}
