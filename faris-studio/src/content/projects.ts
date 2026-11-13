@@ -29,8 +29,8 @@ export const categories: Category[] = [
   {
     id: "creative",
     index: "03",
-    title: "3D, IoT & Creative Technology",
-    summary: "Real-time interaction, game feel and physical computing.",
+    title: "Creative Technology",
+    summary: "Real-time interaction and game feel.",
   },
 ];
 
