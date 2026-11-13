@@ -28,7 +28,7 @@ export const site = {
   resumePdf: null as string | null, // PLACEHOLDER
 
   /** Set to false to hide cards flagged `placeholder: true` in projects.ts. */
-  showPlaceholders: true,
+  showPlaceholders: false,
 } as const;
 
 export const navigation = [
